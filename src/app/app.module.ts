@@ -11,7 +11,8 @@ import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
     PokemonCardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

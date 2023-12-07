@@ -40,11 +40,14 @@ export class PokeapiserviceService {
     return this.getTypePokemons(TypePokemon.Electric);
   }
   getRockPokemons(){
-    return this.getTypePokemons(TypePokemon.Electric);
+    return this.getTypePokemons(TypePokemon.Rock);
+  }
+  getWaterPokemons(){
+    return this.getTypePokemons(TypePokemon.Water);
   }
 
   getPokemon(id : number){
-    console.error('Not implemented yet. Hint:  https://pokeapi.co/api/v2/pokemon/:id')
+    return this.http.get<any>(this.baseUrl + `pokemon/${id}`);
   }
 
 }

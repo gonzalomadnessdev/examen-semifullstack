@@ -1,0 +1,9 @@
+<div class="container" *ngIf="data">
+  <div *ngIf="data.sprites">
+    <img [src]="data.sprites.front_default" alt="">
+  </div>
+  <div>
+    <pre>name : {{ data.name }}</pre>
+    <pre>types : {{ types }}</pre>
+  </div>
+</div>
